@@ -1085,6 +1085,7 @@
 	"thinking_mode_auto": "Default",
 	"thinking_mode_on": "On",
 	"thinking_mode_off": "Off",
+	"effort_disabled": "Disabled",
 	"effort_low": "Low",
 	"effort_medium": "Medium",
 	"effort_high": "High",

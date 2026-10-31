@@ -499,6 +499,7 @@ export function ProviderSamplerPanel({ values, onChange, showTokenPadding = true
             <SegmentedControl
               value={values.reasoningEffort}
               options={[
+                { value: "none", label: t("effort_disabled") },
                 { value: "low", label: t("effort_low") },
                 { value: "medium", label: t("effort_medium") },
                 { value: "high", label: t("effort_high") },

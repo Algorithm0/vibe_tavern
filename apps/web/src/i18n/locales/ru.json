@@ -1066,6 +1066,7 @@
 	"thinking_mode_auto": "По умолчанию",
 	"thinking_mode_on": "Вкл",
 	"thinking_mode_off": "Выкл",
+	"effort_disabled": "Отключено",
 	"effort_low": "Низкое",
 	"effort_medium": "Среднее",
 	"effort_high": "Высокое",
