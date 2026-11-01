@@ -1,0 +1,27 @@
+event: generation-metadata
+data: {"modelId":"mock-1","presetName":"Default"}
+
+event: reasoning-delta
+data: {"delta":"thinking about a greeting"}
+
+event: text-delta
+data: {"delta":"*smiles* "}
+
+event: text-delta
+data: {"delta":"Hello, "}
+
+event: text-delta
+data: {"delta":"traveler. "}
+
+event: text-delta
+data: {"delta":"Welcome "}
+
+event: text-delta
+data: {"delta":"to the tower."}
+
+event: reasoning-done
+data: {"durationMs":151}
+
+event: finish
+data: {"finishReason":"stop","usage":{"inputTokens":10,"outputTokens":5,"totalTokens":15}}
+

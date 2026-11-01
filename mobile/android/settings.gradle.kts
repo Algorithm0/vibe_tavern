@@ -15,3 +15,6 @@ dependencyResolutionManagement {
 
 rootProject.name = "VibeTavern"
 include(":app")
+include(":core:model")
+include(":core:network")
+include(":core:data")
