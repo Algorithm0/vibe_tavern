@@ -17,16 +17,24 @@
         android:theme="@style/Theme.VibeTavern"
         android:usesCleartextTraffic="true">
 
+        <!-- The native client is the app's front door. -->
         <activity
-            android:name=".MainActivity"
+            android:name=".client.ClientActivity"
             android:exported="true"
-            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden|smallestScreenSize|uiMode"
             android:windowSoftInputMode="adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- The original launcher screen: server log, updates, legacy migration. Opened from the client. -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:windowSoftInputMode="adjustResize" />
 
         <service
             android:name=".ServerService"

@@ -16,7 +16,8 @@ kotlin {
 dependencies {
     api(project(":core:model"))
     api("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.9.0")
-    implementation("com.squareup.okhttp3:okhttp:4.12.0")
+    // api: the app constructs OkHttpEngine, whose constructor takes an OkHttpClient.
+    api("com.squareup.okhttp3:okhttp:4.12.0")
 
     testImplementation("junit:junit:4.13.2")
 }
