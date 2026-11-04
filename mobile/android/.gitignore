@@ -17,3 +17,6 @@ local.properties
 /signing.properties
 /app/signing.properties
 /app/*.apk
+
+# The root .gitignore ignores "data/" (runtime data); :core:data and its "data" package are source.
+!data/
