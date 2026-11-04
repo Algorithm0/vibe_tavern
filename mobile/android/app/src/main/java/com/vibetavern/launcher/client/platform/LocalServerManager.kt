@@ -115,4 +115,8 @@ class LocalServerManager(private val context: Context, private val scope: Corout
             }
         }
     }
+
+    private companion object {
+        const val READY_TIMEOUT_SECONDS = 120
+    }
 }

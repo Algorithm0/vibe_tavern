@@ -10,7 +10,7 @@ import org.junit.Test
 
 class SseTest {
 
-    private fun frames(text: String): List<SseFrame> = runBlocking<Unit> {
+    private fun frames(text: String): List<SseFrame> = runBlocking {
         flowOf(*text.split("\n").toTypedArray()).sseFrames().toList()
     }
 
@@ -60,7 +60,7 @@ class SseTest {
 
     // ── against real captured streams ────────────────────────────────────
 
-    private fun decode(fixture: String): List<StreamEvent> = runBlocking<Unit> {
+    private fun decode(fixture: String): List<StreamEvent> = runBlocking {
         flowOf(*Fixtures.text(fixture).split("\n").toTypedArray()).sseFrames().streamEvents().toList()
     }
 
